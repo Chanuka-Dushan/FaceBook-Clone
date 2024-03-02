@@ -79,6 +79,7 @@ body{
     border-radius: 50%;
     cursor: pointer;
     padding: 10px;
+    object-fit: cover;
 }
 .navmiddle{
     margin-right: 30px;
@@ -92,6 +93,9 @@ body{
     left: 6px;
     position: absolute;
 }
+.profile-pic.active .card-menu-wrap{
+    display: block;
+}
 .navmiddle img{
     height: 40px;
     width: 40px;
@@ -103,3 +107,161 @@ body{
     color: #646262;
     position: relative;
 }
+.hidedrop{
+    display: inline-block;
+    position: relative;
+}
+.card-menu-wrap {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    max-height: 400px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.card-menu-wrap.active {
+    display: block; 
+}
+
+.card-menu{
+    width: 330px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 14px;
+}
+.profile-menu{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 12px 0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.card-menu-item{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius:8px;
+    padding: 5px o;
+}
+.card-menu-item:hover{
+    background: #efefef;
+}
+.card-menu-item p{
+    width: 100%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-menu-item span{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-menu-item img{
+    width:30px;
+    height: 30px;
+    background: #e5e5e5;
+    padding: 6px;
+    margin-top: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.content{
+    margin-top: 60px;
+    height: 100%;
+    top: 100%;
+    background:white;
+    position: relative;
+    display: flex;
+}
+.content-left{
+    padding: 20px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+
+}
+.profilepic{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.prof{
+    display: flex;
+    align-items: center;
+}
+.content-middle{
+    padding: 10px;
+    width: 60%;
+}
+.content-right{
+    display: flex;
+    padding: 10px;
+    max-width: 320px;
+}
+
+.birthdaycard{
+    padding-top: 0;
+    margin-top: 0px;
+    display: block;
+}
+.birthinfo img{
+    width: 50px;
+    height: 50px;
+}
+.birthinfo{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+hr{
+    color: #252525;
+    width: 310px;
+    padding-top: 0;
+}
+
+.contact-online{
+    display: flex;
+    position: absolute;
+    padding-top: 100px;
+    align-items: center;
+    
+}
+.contact-online p{
+    padding-right: 170px;
+}
+.contact-online img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+.contactdetails{
+    position: absolute;
+    display: block;
+    padding-top: 130px;
+    align-items: center;
+
+}
+.contactdetails img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.contact-desc{
+    align-items: center;
+    display: flex;
+}
+.storyview{}
