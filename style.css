@@ -4,8 +4,9 @@
     box-sizing: border;
 }
 body{
-    background-color: #efefef;
+    background-color: #ffffff;
     color: #252525;
+    object-fit: cover;
 }
 
 /*navbar css*/
@@ -182,6 +183,7 @@ body{
 }
 .content-left{
     padding: 20px;
+    width: 360px;
     overflow-y: auto; 
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -206,7 +208,7 @@ body{
 .content-right{
     display: flex;
     padding: 10px;
-    max-width: 320px;
+    max-width: 360px;
 }
 
 .birthdaycard{
@@ -224,7 +226,7 @@ body{
     display: flex;
     align-items: center;
 }
-hr{
+.birthinfo hr{
     color: #252525;
     width: 310px;
     padding-top: 0;
@@ -264,4 +266,103 @@ hr{
     align-items: center;
     display: flex;
 }
-.storyview{}
+.storyview{
+    display: flex;
+    padding: 0 32px;
+}
+.storycard{
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 250px;
+    width: 140px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3);
+    overflow-x: visible;
+    align-items: center;
+}
+.storycard img{
+    align-items: center;
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+}
+.addicon{
+    width:10px;
+    height: 10px;
+    object-fit: cover;
+}
+.addicon img{
+    width: 50px;
+    height: 50px;
+    padding-left: 40px;
+    margin-top: -50px;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.5);
+}
+.storycard p{
+   
+    text-align: center;
+    font-style:oblique;
+}
+.addsome{
+    width:520px;
+    height: 110px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3);
+    margin-top:20px;
+    margin-left: 85px;
+    object-fit: cover;
+}
+.upper{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+.upper img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.upper input{
+    width: 400px;
+    border-radius: 20px;
+    align-items: center;
+    height: 30px;
+    padding-left: 10px;
+}
+.seepost{
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+.downdetails{
+    display: flex;
+    margin-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    object-fit: cover;
+    
+   
+}
+.downdetails img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.downdetails p{
+    padding-left: 10px;
+}
+.postdetails{
+    width:520px;
+    height: 654px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 2px rgba(0,0,0,0.3);
+    margin-top:20px;
+    margin-left: 85px;
+    object-fit: cover;
+}
